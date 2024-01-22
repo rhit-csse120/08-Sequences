@@ -529,7 +529,7 @@ def count_positive_sines(numbers):
       -- count_positive_sines([7, 7, 7])              returns 3
 
     Type hints:
-      :type sequence: list or tuple (of numbers)
+      :type numbers: list or tuple (of numbers)
     """
     # -------------------------------------------------------------------------
     # TODO: 8. Implement and test this function.
