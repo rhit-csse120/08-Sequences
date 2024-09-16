@@ -8,10 +8,18 @@ through a SEQUENCE.
 It also demonstrates using an ORACLE and/or PROBABILITY THEORY
 in testing and BOUNDARY (EDGE) TESTING.
 
-Authors: David Mutchler, Vibha Alangar, Dave Fisher, Matt Boutell, Mark Hays,
-         Mohammed Noureddine, Sana Ebrahimi, Sriram Mohan, their colleagues and
+Authors: David Mutchler, Rachel Krohn, Dave Fisher, Shawn Bohner, Sriram Mohan,
+         Amanda Stouder, Vibha Alangar, Mark Hays, Dave Henthorn, Matt Boutell,
+         Scott McClellan, Yiji Zhang, Mohammed Noureddine, Steve Chenoweth,
+         Claude Anderson, Michael Wollowski, Chandan Rupakheti,
+         Derek Whitley, Curt Clifton, Valerie Galluzzi, their colleagues and
          PUT_YOUR_NAME_HERE.
 """  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+
+"""
+Academic Integrity: I got help on this module from:
+         PUT_HERE_THE_NAMES_OF_PEOPLE_WHO_HELPED_YOU_ON_THIS_MODULE_(IF_ANY).
+"""  # TODO: If you got help from anyone on this module, list their names here.
 
 import random
 import builtins  # Never necessary, but here to make a point about SUM
@@ -39,7 +47,7 @@ random.seed((time.time() * 100) % 1000)
 
 
 def main():
-    """ Calls the   TEST   functions in this module. """
+    """Calls the   TEST   functions in this module."""
     run_test_sum_sequence()
     run_test_count_items_bigger_than()
     run_test_count_positive_sines()
@@ -47,7 +55,7 @@ def main():
 
 
 def run_test_sum_sequence():
-    """ Tests the   sum_sequence   function. """
+    """Tests the   sum_sequence   function."""
     print()
     print("--------------------------------------------------")
     print("Testing the   sum_sequence   function:")
@@ -239,7 +247,7 @@ def sum_sequence(sequence):
 
 
 def run_test_count_items_bigger_than():
-    """ Tests the   count_items_bigger_than   function. """
+    """Tests the   count_items_bigger_than   function."""
     # -------------------------------------------------------------------------
     # TODO: 5. Implement this TEST function.
     #   It TESTS the  count_items_bigger_than  function defined below.
@@ -408,7 +416,7 @@ def count_items_bigger_than(numbers, threshold):
 
 
 def run_test_count_positive_sines():
-    """ Tests the   count_positive_sines   function. """
+    """Tests the   count_positive_sines   function."""
     # -------------------------------------------------------------------------
     # TODO: 7. Implement this TEST function.
     #   It TESTS the  count_positive_sines  function defined below.
@@ -538,7 +546,7 @@ def count_positive_sines(numbers):
 
 
 def run_test_sum_first_n():
-    """ Tests the   sum_first_n   function. """
+    """Tests the   sum_first_n   function."""
     # -------------------------------------------------------------------------
     # TODO: 9. Implement this TEST function.
     #   It TESTS the  sum_first_n  function defined below.

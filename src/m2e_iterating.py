@@ -8,15 +8,18 @@ It shows two ways to do so:
   -- using RANGE
   -- using just IN (no RANGE)
 
-Authors: David Mutchler, Vibha Alangar, Dave Fisher, Matt Boutell, Mark Hays,
-         Mohammed Noureddine, Sana Ebrahimi, Sriram Mohan, and their colleagues.
+Authors: David Mutchler, Rachel Krohn, Dave Fisher, Shawn Bohner, Sriram Mohan,
+         Amanda Stouder, Vibha Alangar, Mark Hays, Dave Henthorn, Matt Boutell,
+         Scott McClellan, Yiji Zhang, Mohammed Noureddine, Steve Chenoweth,
+         Claude Anderson, Michael Wollowski, Chandan Rupakheti,
+         Derek Whitley, Curt Clifton, Valerie Galluzzi, and their colleagues.
 """
 
 import rosegraphics as rg
 
 
 def main():
-    """ Calls the   TEST   functions in this module. """
+    """Calls the   TEST   functions in this module."""
     run_test_sum_abs_of_all()
     run_test_sum_abs_of_all_without_range()
     run_test_fill_from_colors()
@@ -90,12 +93,12 @@ def fill_from_colors(window, graphics_object, colors):
          and has a fill color (e.g. an rg.Circle or rg.Rectangle)
       -- A sequence of rosegraphics colors.
     What goes out: Nothing (i.e., None).
-    Side effects: 
+    Side effects:
       -- Attaches the given graphics object to the given RoseWindow.
       -- Then iterates through the given sequence of colors, using
            those colors to set the given graphics object's fill color.
       -- At each iteration, renders the window with a brief pause
-           after doing so, to create a "flashing" display.    
+           after doing so, to create a "flashing" display.
     Type hints:
       :type window: rg.RoseWindow
       :type graphics_object: rg._Shape
@@ -126,7 +129,7 @@ def print_letters(string):
 # Just TEST functions below here.
 ###############################################################################
 def run_test_sum_abs_of_all():
-    """ Tests the   sum_abs_of_all   function. """
+    """Tests the   sum_abs_of_all   function."""
     print()
     print("--------------------------------------------------")
     print("Testing the   sum_abs_of_all   function:")
@@ -143,7 +146,7 @@ def run_test_sum_abs_of_all():
 
 
 def run_test_sum_abs_of_all_without_range():
-    """ Tests the   sum_abs_of_all_without_range   function. """
+    """Tests the   sum_abs_of_all_without_range   function."""
     print()
     print("--------------------------------------------------")
     print("Testing the   sum_abs_of_all_without_range   function:")
@@ -160,7 +163,7 @@ def run_test_sum_abs_of_all_without_range():
 
 
 def run_test_fill_from_colors():
-    """ Tests the   fill_from_colors   function. """
+    """Tests the   fill_from_colors   function."""
     print("--------------------------------------------------")
     print("Testing the   fill_from_colors   function:")
     print("See the two graphics windows that pop up.")
@@ -187,9 +190,20 @@ def run_test_fill_from_colors():
     # Test 2: Flashes through a bunch of colors, looping through the
     # list forwards in a rectangle, then backwards in an ellipse.
     # -------------------------------------------------------------------------
-    colors = ["red", "white", "blue", "chartreuse", "chocolate",
-              "DodgerBlue", "LightPink", "maroon", "yellow", "green",
-              "SteelBlue", "black"]
+    colors = [
+        "red",
+        "white",
+        "blue",
+        "chartreuse",
+        "chocolate",
+        "DodgerBlue",
+        "LightPink",
+        "maroon",
+        "yellow",
+        "green",
+        "SteelBlue",
+        "black",
+    ]
 
     title = "Loop through 12 colors, forwards then backwards!"
     window = rg.RoseWindow(450, 250, title, canvas_color="yellow")
@@ -197,18 +211,18 @@ def run_test_fill_from_colors():
     rect_width = 100
     rect_height = 40
     rect_center = rg.Point(125, 100)
-    rectangle = rg.Rectangle(rg.Point(rect_center.x - (rect_width / 2),
-                                      rect_center.y - (rect_height / 2)),
-                             rg.Point(rect_center.x + (rect_width / 2),
-                                      rect_center.y + (rect_height / 2)))
+    rectangle = rg.Rectangle(
+        rg.Point(rect_center.x - (rect_width / 2), rect_center.y - (rect_height / 2)),
+        rg.Point(rect_center.x + (rect_width / 2), rect_center.y + (rect_height / 2)),
+    )
 
     oval_width = 70
     oval_height = 160
     oval_center = rg.Point(300, 100)
-    ellipse = rg.Ellipse(rg.Point(oval_center.x - (oval_width / 2),
-                                  oval_center.y - (oval_height / 2)),
-                         rg.Point(oval_center.x + (oval_width / 2),
-                                  oval_center.y + (oval_height / 2)))
+    ellipse = rg.Ellipse(
+        rg.Point(oval_center.x - (oval_width / 2), oval_center.y - (oval_height / 2)),
+        rg.Point(oval_center.x + (oval_width / 2), oval_center.y + (oval_height / 2)),
+    )
 
     rectangle.attach_to(window)
     ellipse.attach_to(window)
@@ -233,7 +247,7 @@ def run_test_fill_from_colors():
 
 
 def run_test_print_letters():
-    """ Tests the   print_letters   function. """
+    """Tests the   print_letters   function."""
     print()
     print("--------------------------------------------------")
     print("Testing the   print_letters   function:")

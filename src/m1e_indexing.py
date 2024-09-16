@@ -4,9 +4,13 @@ This module demonstrates INDEXING into a SEQUENCE:
   -- The 'len' function
   -- What goes wrong if the index is out of range
 
-Authors: David Mutchler, Vibha Alangar, Dave Fisher, Matt Boutell, Mark Hays,
-         Mohammed Noureddine, Sana Ebrahimi, Sriram Mohan, and their colleagues.
+Authors: David Mutchler, Rachel Krohn, Dave Fisher, Shawn Bohner, Sriram Mohan,
+         Amanda Stouder, Vibha Alangar, Mark Hays, Dave Henthorn, Matt Boutell,
+         Scott McClellan, Yiji Zhang, Mohammed Noureddine, Steve Chenoweth,
+         Claude Anderson, Michael Wollowski, Chandan Rupakheti,
+         Derek Whitley, Curt Clifton, Valerie Galluzzi, and their colleagues.
 """
+
 ###############################################################################
 # Students: Read and run this program.  There is nothing else
 #           for you to do in here.  Just use it as an example.
@@ -25,7 +29,7 @@ import time
 
 
 def main():
-    """ Demonstrates indexing. """
+    """Demonstrates indexing."""
 
     # -------------------------------------------------------------------------
     # The following are SEQUENCES:
@@ -54,7 +58,7 @@ def main():
 
 
 def examples_of_indexing(sequence):
-    """ Examples of indexing on the given sequence. """
+    """Examples of indexing on the given sequence."""
 
     # -------------------------------------------------------------------------
     # The   len   function returns the length of a sequence.

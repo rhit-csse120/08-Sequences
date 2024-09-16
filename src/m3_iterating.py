@@ -3,23 +3,31 @@ This module lets you practice the ITERATE-THROUGH-A-SEQUENCE pattern
 in its most classic form:
   -- Iterate all the way through the sequence, from beginning to end.
 
-Authors: David Mutchler, Vibha Alangar, Dave Fisher, Matt Boutell, Mark Hays,
-         Mohammed Noureddine, Sana Ebrahimi, Sriram Mohan, their colleagues and
+Authors: David Mutchler, Rachel Krohn, Dave Fisher, Shawn Bohner, Sriram Mohan,
+         Amanda Stouder, Vibha Alangar, Mark Hays, Dave Henthorn, Matt Boutell,
+         Scott McClellan, Yiji Zhang, Mohammed Noureddine, Steve Chenoweth,
+         Claude Anderson, Michael Wollowski, Chandan Rupakheti,
+         Derek Whitley, Curt Clifton, Valerie Galluzzi, their colleagues and
          PUT_YOUR_NAME_HERE.
 """  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+
+"""
+Academic Integrity: I got help on this module from:
+         PUT_HERE_THE_NAMES_OF_PEOPLE_WHO_HELPED_YOU_ON_THIS_MODULE_(IF_ANY).
+"""  # TODO: If you got help from anyone on this module, list their names here.
 
 import rosegraphics as rg
 
 
 def main():
-    """ Calls the   TEST   functions in this module. """
+    """Calls the   TEST   functions in this module."""
     run_test_count_negatives()
     run_test_count_short_ones()
     run_test_draw_circles()
 
 
 def run_test_count_negatives():
-    """ Tests the   count_negatives   function. """
+    """Tests the   count_negatives   function."""
     # -------------------------------------------------------------------------
     # TODO: 2. Implement this TEST function.
     #   It TESTS the  count_negatives  function defined below.
@@ -109,7 +117,7 @@ def count_negatives(seq):
 
 
 def run_test_count_short_ones():
-    """ Tests the   count_short_ones   function. """
+    """Tests the   count_short_ones   function."""
     # -------------------------------------------------------------------------
     # TODO: 4. Implement this TEST function.
     #   It TESTS the  count_short_ones  function defined below.
@@ -124,13 +132,7 @@ def run_test_count_short_ones():
 
     # Test 1:
     expected = 5
-    seq = [[3, 5],
-           [3, 9, 0, 4],
-           [5],
-           [5],
-           [],
-           [9, 8, 7],
-           [5, 6]]
+    seq = [[3, 5], [3, 9, 0, 4], [5], [5], [], [9, 8, 7], [5, 6]]
     actual = count_short_ones(seq)
     print()
     print("Test 1 expected:", expected)
@@ -216,7 +218,7 @@ def count_short_ones(seq_of_lists):
 
 
 def run_test_draw_circles():
-    """ Tests the   draw_circles   function. """
+    """Tests the   draw_circles   function."""
     # -------------------------------------------------------------------------
     # We have supplied two tests for you, on a single window.
     # NO ADDITIONAL TESTS ARE REQUIRED, although you are welcome to
@@ -230,12 +232,9 @@ def run_test_draw_circles():
 
     window = rg.RoseWindow(450, 350, "Points to Circles")
 
-    points1 = [rg.Point(200, 100),
-               rg.Point(100, 130),
-               rg.Point(150, 200)]
+    points1 = [rg.Point(200, 100), rg.Point(100, 130), rg.Point(150, 200)]
 
-    points2 = [rg.Point(50, 50),
-               rg.Point(250, 250)]
+    points2 = [rg.Point(50, 50), rg.Point(250, 250)]
 
     points3 = []
     for k in range(40):
@@ -259,9 +258,7 @@ def run_test_draw_circles():
     # Test 4 on another window:
     window = rg.RoseWindow(250, 150, "More Points to Circles")
 
-    points4 = [rg.Point(30, 50),
-               rg.Point(80, 75),
-               rg.Point(130, 25)]
+    points4 = [rg.Point(30, 50), rg.Point(80, 75), rg.Point(130, 25)]
     draw_circles(window, points4, 25, "yellow")
     window.close_on_mouse_click()
 

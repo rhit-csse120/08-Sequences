@@ -11,10 +11,18 @@ Note that:
 is different from:
   -- LOOKING only at items AT even-numbered indices.
 
-Authors: David Mutchler, Vibha Alangar, Dave Fisher, Matt Boutell, Mark Hays,
-         Mohammed Noureddine, Sana Ebrahimi, Sriram Mohan, their colleagues and
+Authors: David Mutchler, Rachel Krohn, Dave Fisher, Shawn Bohner, Sriram Mohan,
+         Amanda Stouder, Vibha Alangar, Mark Hays, Dave Henthorn, Matt Boutell,
+         Scott McClellan, Yiji Zhang, Mohammed Noureddine, Steve Chenoweth,
+         Claude Anderson, Michael Wollowski, Chandan Rupakheti,
+         Derek Whitley, Curt Clifton, Valerie Galluzzi, their colleagues and
          PUT_YOUR_NAME_HERE.
 """  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+
+"""
+Academic Integrity: I got help on this module from:
+         PUT_HERE_THE_NAMES_OF_PEOPLE_WHO_HELPED_YOU_ON_THIS_MODULE_(IF_ANY).
+"""  # TODO: If you got help from anyone on this module, list their names here.
 
 
 ###############################################################################
@@ -34,7 +42,7 @@ Authors: David Mutchler, Vibha Alangar, Dave Fisher, Matt Boutell, Mark Hays,
 
 
 def main():
-    """ Calls the   TEST   functions in this module. """
+    """Calls the   TEST   functions in this module."""
     run_test_sum_string_lengths()
     run_test_sum_even_integers()
     run_test_sum_items_at_even_indices()
@@ -190,7 +198,7 @@ def sum_items_at_even_indices(sequence):
 
 
 def run_test_sum_string_lengths():
-    """ Tests the   sum_string_lengths   function. """
+    """Tests the   sum_string_lengths   function."""
     print()
     print("--------------------------------------------------")
     print("Testing the   sum_string_lengths   function:")
@@ -205,7 +213,7 @@ def run_test_sum_string_lengths():
 
 
 def run_test_sum_even_integers():
-    """ Tests the   sum_even_integers   function. """
+    """Tests the   sum_even_integers   function."""
     print()
     print("--------------------------------------------------")
     print("Testing the   sum_even_integers   function:")
@@ -221,7 +229,7 @@ def run_test_sum_even_integers():
 
 
 def run_test_sum_items_at_even_indices():
-    """ Tests the   sum_items_at_even_indices   function. """
+    """Tests the   sum_items_at_even_indices   function."""
     print()
     print("--------------------------------------------------")
     print("Testing the   sum_items_at_even_indices   function:")
