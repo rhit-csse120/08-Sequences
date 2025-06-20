@@ -17,6 +17,7 @@ Academic Integrity: I got help on this module from:
 """  # TODO: If you got help from anyone on this module, list their names here.
 
 import rosegraphics as rg
+import time
 
 
 def main():

@@ -16,6 +16,7 @@ Authors: David Mutchler, Rachel Krohn, Dave Fisher, Shawn Bohner, Sriram Mohan,
 """
 
 import rosegraphics as rg
+import time
 
 
 def main():
@@ -264,5 +265,15 @@ def run_test_print_letters():
 
 # -----------------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
+# The   try .. except   prevents error messages on the console from being
+# intermingled with ordinary output to the console.
 # -----------------------------------------------------------------------------
-main()
+if __name__ == "__main__":
+    try:
+        main()
+    except Exception:
+        print("ERROR - While running this test,", color="red")
+        print("your code raised the following exception:", color="red")
+        print()
+        time.sleep(1)
+        raise
