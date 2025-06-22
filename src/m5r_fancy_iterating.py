@@ -40,8 +40,6 @@ Academic Integrity: I got help on this module from:
 #      change the above _TODO_ to DONE.
 ###############################################################################
 
-import time
-
 
 def main():
     """Calls the   TEST   functions in this module."""
@@ -246,15 +244,7 @@ def run_test_sum_items_at_even_indices():
 
 # -----------------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
-# The   try .. except   prevents error messages on the console from being
-# intermingled with ordinary output to the console.
+# This unusual form is necessary for the special testing we provided.
 # -----------------------------------------------------------------------------
 if __name__ == "__main__":
-    try:
-        main()
-    except Exception:
-        print("ERROR - While running this test,", color="red")
-        print("your code raised the following exception:", color="red")
-        print()
-        time.sleep(1)
-        raise
+    main()

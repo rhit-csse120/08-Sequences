@@ -655,15 +655,7 @@ def sum_first_n(numbers, n):
 
 # -----------------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
-# The   try .. except   prevents error messages on the console from being
-# intermingled with ordinary output to the console.
+# This unusual form is necessary for the special testing we provided.
 # -----------------------------------------------------------------------------
 if __name__ == "__main__":
-    try:
-        main()
-    except Exception:
-        print("ERROR - While running this test,", color="red")
-        print("your code raised the following exception:", color="red")
-        print()
-        time.sleep(1)
-        raise
+    main()

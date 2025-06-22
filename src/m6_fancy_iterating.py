@@ -26,7 +26,6 @@ Academic Integrity: I got help on this module from:
 """  # TODO: If you got help from anyone on this module, list their names here.
 
 import rosegraphics as rg
-import time
 
 
 def main():
@@ -529,15 +528,7 @@ def print_items_that_are_odd_integers(sequence):
 
 # -----------------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
-# The   try .. except   prevents error messages on the console from being
-# intermingled with ordinary output to the console.
+# This unusual form is necessary for the special testing we provided.
 # -----------------------------------------------------------------------------
 if __name__ == "__main__":
-    try:
-        main()
-    except Exception:
-        print("ERROR - While running this test,", color="red")
-        print("your code raised the following exception:", color="red")
-        print()
-        time.sleep(1)
-        raise
+    main()
